@@ -17,9 +17,9 @@ const ContactSection = () => (
             <Phone className="h-6 w-6 text-primary" />
             <span className="text-sm font-medium text-foreground">+91 92467 35245</span>
           </a>
-          <a href="mailto:kasturikayamchurna1962@gmail.com" className="flex flex-col items-center gap-2 bg-background rounded-xl p-5 border border-border hover:shadow-md transition-shadow">
-            <Mail className="h-6 w-6 text-primary" />
-            <span className="text-sm font-medium text-foreground">kasturikayamchurna1962@gmail.com</span>
+          <a href="mailto:kasturikayamchurna1962@gmail.com" className="flex flex-col items-center gap-2 bg-background rounded-xl p-5 border border-border hover:shadow-md transition-shadow overflow-hidden">
+            <Mail className="h-6 w-6 text-primary shrink-0" />
+            <span className="text-sm font-medium text-foreground break-all text-center">kasturikayamchurna1962@gmail.com</span>
           </a>
           <a
             href="https://wa.me/919246735245"

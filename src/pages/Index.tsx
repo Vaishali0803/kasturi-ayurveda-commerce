@@ -8,7 +8,7 @@ import VariantsSection from "@/components/VariantsSection";
 import IngredientsSection from "@/components/IngredientsSection";
 import HowToUseSection from "@/components/HowToUseSection";
 import TrustBadges from "@/components/TrustBadges";
-import TestimonialsSection from "@/components/TestimonialsSection";
+
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -27,7 +27,7 @@ const Index = () => (
     <IngredientsSection />
     <HowToUseSection />
     <TrustBadges />
-    <TestimonialsSection />
+    
     <FAQSection />
     <ContactSection />
     <Footer />

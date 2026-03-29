@@ -13,16 +13,16 @@ const ContactSection = () => (
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2 mb-8">Contact Us</h2>
 
         <div className="grid sm:grid-cols-3 gap-4 mb-8">
-          <a href="tel:+919999999999" className="flex flex-col items-center gap-2 bg-background rounded-xl p-5 border border-border hover:shadow-md transition-shadow">
+          <a href="tel:+919246735245" className="flex flex-col items-center gap-2 bg-background rounded-xl p-5 border border-border hover:shadow-md transition-shadow">
             <Phone className="h-6 w-6 text-primary" />
-            <span className="text-sm font-medium text-foreground">+91 99999 99999</span>
+            <span className="text-sm font-medium text-foreground">+91 92467 35245</span>
           </a>
-          <a href="mailto:info@kasturikayam.com" className="flex flex-col items-center gap-2 bg-background rounded-xl p-5 border border-border hover:shadow-md transition-shadow">
+          <a href="mailto:kasturikayamchurna1962@gmail.com" className="flex flex-col items-center gap-2 bg-background rounded-xl p-5 border border-border hover:shadow-md transition-shadow">
             <Mail className="h-6 w-6 text-primary" />
-            <span className="text-sm font-medium text-foreground">info@kasturikayam.com</span>
+            <span className="text-sm font-medium text-foreground">kasturikayamchurna1962@gmail.com</span>
           </a>
           <a
-            href="https://wa.me/919999999999"
+            href="https://wa.me/919246735245"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-2 bg-background rounded-xl p-5 border border-border hover:shadow-md transition-shadow"

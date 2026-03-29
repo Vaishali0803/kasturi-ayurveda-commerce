@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import herbalPattern from "@/assets/herbal-pattern.png";
 
 const herbs = [
-  { name: "Senna Leaf", benefit: "Supports natural bowel movement" },
-  { name: "Haritaki", benefit: "Traditional digestive tonic" },
-  { name: "Ajwain", benefit: "Helps relieve bloating" },
-  { name: "Saunf (Fennel)", benefit: "Soothes the digestive tract" },
+  { name: "Svarnapati Leaves", benefit: "Supports natural bowel movement" },
+  { name: "Yavani Fruit", benefit: "Helps relieve bloating and gas" },
+  { name: "Haritaki Fruit", benefit: "Traditional digestive tonic" },
+  { name: "Tvakpatra", benefit: "Supports digestive wellness" },
   { name: "Black Salt", benefit: "Aids in improving appetite" },
-  { name: "Sonth (Ginger)", benefit: "Supports healthy digestion" },
+  { name: "Vibhitaki Fruit", benefit: "Promotes healthy digestion" },
 ];
 
 const IngredientsSection = () => (

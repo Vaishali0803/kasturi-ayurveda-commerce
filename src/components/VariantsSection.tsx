@@ -1,7 +1,7 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { ShoppingCart, Check, Star } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
+import { useCart } from "@/context/CartContext";
+import { useState } from "react";
 
 const products = [
   { size: "100g", label: "Trial Pack", price: 99, originalPrice: 149, tag: null },
@@ -10,16 +10,13 @@ const products = [
 ];
 
 const VariantsSection = () => {
-  const { toast } = useToast();
+  const { addToCart } = useCart();
   const [addedItems, setAddedItems] = useState<string[]>([]);
 
-  const handleAddToCart = (size: string) => {
-    setAddedItems((prev) => [...prev, size]);
-    toast({
-      title: "Added to cart!",
-      description: `Kasturi Kayam Churna ${size} added successfully.`,
-    });
-    setTimeout(() => setAddedItems((prev) => prev.filter((s) => s !== size)), 2000);
+  const handleAddToCart = (p: typeof products[0]) => {
+    addToCart({ size: p.size, label: p.label, price: p.price, originalPrice: p.originalPrice });
+    setAddedItems((prev) => [...prev, p.size]);
+    setTimeout(() => setAddedItems((prev) => prev.filter((s) => s !== p.size)), 2000);
   };
 
   return (
@@ -32,9 +29,7 @@ const VariantsSection = () => {
           className="text-center mb-14"
         >
           <span className="text-sm font-semibold text-primary uppercase tracking-wider">Shop Now</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2">
-            Choose Your Pack
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2">Choose Your Pack</h2>
         </motion.div>
 
         <div className="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
@@ -55,12 +50,8 @@ const VariantsSection = () => {
                 {p.tag && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                     <span className={`px-4 py-1 rounded-full text-xs font-bold ${
-                      isPopular
-                        ? "bg-primary text-primary-foreground"
-                        : "bg-accent text-accent-foreground"
-                    }`}>
-                      {p.tag}
-                    </span>
+                      isPopular ? "bg-primary text-primary-foreground" : "bg-accent text-accent-foreground"
+                    }`}>{p.tag}</span>
                   </div>
                 )}
 
@@ -82,7 +73,7 @@ const VariantsSection = () => {
                 </div>
 
                 <button
-                  onClick={() => handleAddToCart(p.size)}
+                  onClick={() => handleAddToCart(p)}
                   disabled={added}
                   className={`w-full py-3 rounded-lg font-semibold text-sm transition-all flex items-center justify-center gap-2 ${
                     added
@@ -91,13 +82,9 @@ const VariantsSection = () => {
                   }`}
                 >
                   {added ? (
-                    <>
-                      <Check className="h-4 w-4" /> Added!
-                    </>
+                    <><Check className="h-4 w-4" /> Added!</>
                   ) : (
-                    <>
-                      <ShoppingCart className="h-4 w-4" /> Add to Cart
-                    </>
+                    <><ShoppingCart className="h-4 w-4" /> Add to Cart</>
                   )}
                 </button>
               </motion.div>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ShoppingCart, MessageCircle, Star } from "lucide-react";
-import productImage from "@/assets/product-hero.png";
+import productImage from "@/assets/product-hero.jpeg";
 
 const variants = [
   { size: "100g", label: "Trial Pack" },
@@ -67,7 +67,7 @@ const HeroSection = () => {
                 Buy Now
               </a>
               <a
-                href="https://wa.me/919999999999?text=I%20want%20to%20order%20Kasturi%20Kayam%20Churna"
+                href="https://wa.me/919246735245?text=I%20want%20to%20order%20Kasturi%20Kayam%20Churna"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-herbal-medium text-primary-foreground px-8 py-3.5 rounded-lg font-semibold hover:opacity-90 transition-opacity text-sm"

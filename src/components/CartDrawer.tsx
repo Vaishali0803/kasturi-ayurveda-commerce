@@ -2,7 +2,7 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sh
 import { useCart } from "@/context/CartContext";
 import { Minus, Plus, Trash2, ShoppingBag, MessageCircle } from "lucide-react";
 
-const WHATSAPP_NUMBER = "919999999999";
+const WHATSAPP_NUMBER = "919246735245";
 
 const CartDrawer = () => {
   const { items, totalItems, totalPrice, updateQuantity, removeFromCart, clearCart, isOpen, setIsOpen } = useCart();

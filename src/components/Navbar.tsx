@@ -6,7 +6,7 @@ const navLinks = [
   { label: "Benefits", href: "#benefits" },
   { label: "Variants", href: "#variants" },
   { label: "How to Use", href: "#how-to-use" },
-  { label: "Reviews", href: "#testimonials" },
+  
   { label: "FAQ", href: "#faq" },
 ];
 

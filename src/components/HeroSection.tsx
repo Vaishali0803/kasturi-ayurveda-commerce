@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ShoppingCart, MessageCircle, Star } from "lucide-react";
-import productImage from "@/assets/product-hero.jpeg";
+import productImage from "@/assets/product-hero.png";
 
 const variants = [
   { size: "100g", label: "Trial Pack" },

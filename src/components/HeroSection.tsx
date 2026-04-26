@@ -4,13 +4,13 @@ import { ShoppingCart, MessageCircle, Star } from "lucide-react";
 import productImage from "@/assets/product-hero.png";
 
 const variants = [
-  { size: "100g", label: "Trial Pack" },
-  { size: "250g", label: "Most Popular" },
-  { size: "500g", label: "Best Value" },
+  { size: "10g", label: "1 Jar" },
+  { size: "50g", label: "1 Bottle" },
+  { size: "100g", label: "1 Bottle" },
 ];
 
 const HeroSection = () => {
-  const [selectedSize, setSelectedSize] = useState("250g");
+  const [selectedSize, setSelectedSize] = useState("50g");
 
   return (
     <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden bg-herbal-gradient">

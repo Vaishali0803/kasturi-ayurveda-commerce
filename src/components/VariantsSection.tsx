@@ -4,9 +4,9 @@ import { useCart } from "@/context/CartContext";
 import { useState } from "react";
 
 const products = [
-  { size: "100g", label: "Trial Pack", price: 99, originalPrice: 149, tag: null },
-  { size: "250g", label: "Most Popular", price: 199, originalPrice: 299, tag: "Best Seller" },
-  { size: "500g", label: "Best Value", price: 349, originalPrice: 499, tag: "Save 30%" },
+  { size: "10g", label: "1 Jar", price: 864, originalPrice: 1500, tag: null },
+  { size: "50g", label: "1 Bottle", price: 37, originalPrice: 65, tag: null },
+  { size: "100g", label: "1 Bottle", price: 66, originalPrice: 115, tag: null },
 ];
 
 const VariantsSection = () => {
